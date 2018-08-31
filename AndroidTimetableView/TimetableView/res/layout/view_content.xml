@@ -12,9 +12,8 @@
         android:orientation="horizontal">
         <LinearLayout
             android:id="@+id/weekPanel_0"
-            android:layout_width="0dp"
+            android:layout_width="20dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:paddingBottom="5dp"
             android:background="@color/app_white"
             android:orientation="vertical">
@@ -25,57 +24,57 @@
             android:id="@+id/weekPanel_1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1.5"
+            android:layout_weight="1"
             android:layout_marginBottom="5dp"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical"/>
 
         <LinearLayout
             android:id="@+id/weekPanel_2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1.5"
+            android:layout_weight="1"
             android:layout_marginBottom="5dp"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical"/>
 
         <LinearLayout
             android:id="@+id/weekPanel_3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1.5"
+            android:layout_weight="1"
             android:layout_marginBottom="5dp"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical"/>
 
         <LinearLayout
             android:id="@+id/weekPanel_4"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1.5"
+            android:layout_weight="1"
             android:layout_marginBottom="5dp"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical"/>
 
         <LinearLayout
             android:id="@+id/weekPanel_5"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1.5"
+            android:layout_weight="1"
             android:layout_marginBottom="5dp"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical"/>
 
         <LinearLayout
             android:id="@+id/weekPanel_6"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1.5"
+            android:layout_weight="1"
             android:layout_marginBottom="5dp"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical"/>
 
         <LinearLayout
             android:id="@+id/weekPanel_7"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1.5"
+            android:layout_weight="1"
             android:layout_marginBottom="5dp"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical"/>
     </LinearLayout>
 
     <LinearLayout

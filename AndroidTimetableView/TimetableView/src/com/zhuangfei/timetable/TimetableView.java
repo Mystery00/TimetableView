@@ -1108,9 +1108,11 @@ public class TimetableView extends LinearLayout {
         }
 
         flagLayout.setBackgroundColor(flagBgcolor());
-        float perWidth = ScreenUtils.getWidthInPx(context) / 11.5f;
-        onSpaceItemClickListener().onInit(flagLayout, Math.round(perWidth),
-                Math.round(perWidth*1.5f),itemHeight(),marTop(),
+		float screenWidth = ScreenUtils.getWidthInPx(context);
+		float perMonthWidth = ScreenUtils.dip2px(context,20);
+		float perDayWidth = (screenWidth - ScreenUtils.dip2px(context,20)) / 7f;
+        onSpaceItemClickListener().onInit(flagLayout, Math.round(perMonthWidth),
+                Math.round(perDayWidth),itemHeight(),marTop(),
                 Math.round(marLeft()/2.0f));
 
         //更新日期
@@ -1143,12 +1145,14 @@ public class TimetableView extends LinearLayout {
      */
     public void updateDateView() {
         dateLayout.removeAllViews();
-        float perWidth = ScreenUtils.getWidthInPx(context) / 11.5f;
+        float screenWidth = ScreenUtils.getWidthInPx(context);
+        float perMonthWidth = ScreenUtils.dip2px(context,20);
+        float perDayWidth = (screenWidth - ScreenUtils.dip2px(context,20)) / 7f;
         int height = context.getResources().getDimensionPixelSize(R.dimen.headHeight);
 //		//日期栏
         ISchedule.OnDateBuildListener listener = onDateBuildListener();
         listener.onInit(dateLayout, dateAlpha());
-        View[] views = onDateBuildListener().getDateViews(inflater, perWidth, height);
+        View[] views = onDateBuildListener().getDateViews(inflater, perMonthWidth, perDayWidth, height);
         for (View v : views) {
             if (v != null) {
                 dateLayout.addView(v);

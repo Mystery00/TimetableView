@@ -178,11 +178,11 @@ public interface ISchedule {
          * 获取View数组
          *
          * @param mInflate 转换器
-         * @param perWidth 每个单位的宽度，月份占1个单位，其余为1.5个单位
+         * @param perMonthWidth 每个单位的宽度，月份占1个单位，其余为1.5个单位
          * @param height   默认的日期栏高度
          * @return
          */
-        View[] getDateViews(LayoutInflater mInflate, float perWidth, int height);
+        View[] getDateViews(LayoutInflater mInflate, float perMonthWidth, float perDayWidth, int height);
 
         /**
          * 为日期栏设置高亮时回调

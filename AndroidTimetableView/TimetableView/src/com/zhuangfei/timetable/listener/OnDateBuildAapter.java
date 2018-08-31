@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.zhuangfei.android_timetableview.sample.R;
 import com.zhuangfei.timetable.model.ScheduleSupport;
 import com.zhuangfei.timetable.utils.ColorUtils;
+import com.zhuangfei.timetable.utils.ScreenUtils;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -54,14 +55,14 @@ public class OnDateBuildAapter implements ISchedule.OnDateBuildListener {
     }
 
     @Override
-    public View[] getDateViews(LayoutInflater mInflate, float perWidth, int height) {
+    public View[] getDateViews(LayoutInflater mInflate, float perMonthWidth, float perDayWidth, int height) {
         View[] views = new View[8];
 
         //月份占1份的宽度
-        views[0] = onBuildMonthLayout(mInflate,(int)perWidth,height);
+        views[0] = onBuildMonthLayout(mInflate,(int) perMonthWidth,height);
 
         for (int i = 1; i < 8; i++) {
-            views[i]=onBuildDayLayout(mInflate,i,(int)(perWidth*1.5),height);
+            views[i]=onBuildDayLayout(mInflate,i,(int) perDayWidth,height);
         }
         return views;
     }
