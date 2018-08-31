@@ -1109,7 +1109,7 @@ public class TimetableView extends LinearLayout {
 
         flagLayout.setBackgroundColor(flagBgcolor());
 		float screenWidth = ScreenUtils.getWidthInPx(context);
-		float perMonthWidth = ScreenUtils.dip2px(context,20);
+		float perMonthWidth = ScreenUtils.dip2px(context,22);
 		float perDayWidth = (screenWidth - ScreenUtils.dip2px(context,20)) / 7f;
         onSpaceItemClickListener().onInit(flagLayout, Math.round(perMonthWidth),
                 Math.round(perDayWidth),itemHeight(),marTop(),
@@ -1146,7 +1146,7 @@ public class TimetableView extends LinearLayout {
     public void updateDateView() {
         dateLayout.removeAllViews();
         float screenWidth = ScreenUtils.getWidthInPx(context);
-        float perMonthWidth = ScreenUtils.dip2px(context,20);
+        float perMonthWidth = ScreenUtils.dip2px(context,22);
         float perDayWidth = (screenWidth - ScreenUtils.dip2px(context,20)) / 7f;
         int height = context.getResources().getDimensionPixelSize(R.dimen.headHeight);
 //		//日期栏
